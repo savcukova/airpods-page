@@ -8,6 +8,12 @@ header {
         justify-content: space-between;
         padding: 40px 0;
 
+        .logo{
+            &:hover {
+                scale: 1.05;
+            }
+        }
+
         .menu-list {
             display: flex;
             align-items: center;
@@ -21,6 +27,10 @@ header {
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #fff;
+
+                &:hover {
+                    scale: 1.05;
+                }
             }
         }
     }
@@ -64,5 +74,84 @@ header {
             background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
             z-index: -10;
         }
+    }
+}
+
+@media (max-width: 1450px){
+    header {
+        .hero-section{
+            .hero-imgs img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .title {
+        font-size: 180px;
+        transform: translate(130px, 30px);
+    }
+}
+
+@media (max-width: 1350px){
+    .title{
+        transform: none;
+        font-size: 140px;
+        padding-top: 20vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    header {
+        .hero-section{
+            .title-s{
+                transform: none;
+                text-transform: lowercase;
+            }
+
+            .title-m{
+                transform: none;
+            }
+
+            .title-ax{
+                transform: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 870px){
+    .title{
+        position: relative;
+        font-size: 70px;
+        padding-top: 0;
+    }
+
+    header{
+        .hero-section{
+            .title-m{
+                padding-left: 15px;
+            }
+        }
+
+        .nav-section{
+            .menu-list {
+                display: none;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 470px){
+    .title{
+        font-size: 40px;
+    }
+
+    header {
+        min-height: 50vh;
     }
 }

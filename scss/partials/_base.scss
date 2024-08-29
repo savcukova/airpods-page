@@ -1,11 +1,13 @@
-.none{
-    display: none;
+html {
+    scroll-behavior: smooth;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    transition: all ease-in-out 0.3s;
 }
 
 body {
@@ -50,4 +52,18 @@ ul {
     text-align: center;
     font-size: 64px;
     margin-bottom: 20px;
+}
+
+.menu-icon {
+    width: 40px;
+    display: none;
+}
+
+.close-icon{
+    display: none;
+    width: 40px;
+}
+
+.none{
+    display: none;
 }

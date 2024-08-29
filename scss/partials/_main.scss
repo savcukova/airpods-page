@@ -23,6 +23,10 @@
             border: 1px solid grey;
             border-radius: 20px;
             padding: 50px 55px;
+
+            &:hover {
+                scale: 1.05;
+            }
         }
     }
 }
@@ -43,6 +47,7 @@
 
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         
         .inner-text {
             display: flex;
@@ -62,6 +67,12 @@
     background-color: #fafafa;
     padding: 80px 0 100px;
     text-align: center;
+
+    img {
+        &:hover {
+            scale: 1.05;
+        }
+    }
 
     .case-text {
         max-width: 825px;
@@ -168,8 +179,96 @@ footer {
     .footer-list{
         padding-top: 80px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 0 20px;
+        gap: 20px;
+    }
+
+    .logo img{
+        &:hover {
+            scale: 1.05;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .choose-color{
+        padding-bottom: 60px;
+
+        .color-list{
+            gap: 16px;
+        }
+    }
+
+    .composition{
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+    }
+
+    .case{
+        padding: 60px 0;
+
+        .energy-title{
+            padding-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        .energy-num{
+            font-size: 110px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .main-title{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 560px){
+    .composition{
+        .composition-inner{
+            justify-content: center;
+
+            .inner-text{
+                padding: 30px 0;
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 414px){
+    .choose-color{
+        .color-title{
+            font-size: 24px;
+        }
+    }
+
+    .main-title{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .case img {
+        max-width: 100%;
+    }
+
+    .composition{
+        padding-bottom: 0;
+
+        .composition-text{
+            margin: 0 auto;
+        }
     }
 }
