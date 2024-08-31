@@ -61,18 +61,37 @@ header {
         .hero-imgs {
             padding-bottom: 50px;
             text-align: center;
-        }
 
-        .hero-imgs::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
-            z-index: -10;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                z-index: -10;
+            }
+
+            &:has(.blue.content-item-active)::before{
+                background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+
+            &:has(.red.content-item-active)::before{
+                background: linear-gradient(180deg, #F3D6D1 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+
+            &:has(.green.content-item-active)::before{
+                background: linear-gradient(180deg, #DDEAD9 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+
+            &:has(.white.content-item-active)::before{
+                background: linear-gradient(180deg, #FAFAFA 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+
+            &:has(.black.content-item-active)::before{
+                background: linear-gradient(180deg, #B6B6B6 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
         }
     }
 }
@@ -137,6 +156,8 @@ header {
             .menu-list {
                 display: none;
                 flex-direction: column;
+                width: 100%;
+                z-index: 9;
             }
         }
     }

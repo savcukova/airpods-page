@@ -67,3 +67,15 @@ ul {
 .none{
     display: none;
 }
+
+.choose-color-active{
+    display: none;
+}
+
+.content-item {
+    display: none;
+}
+
+.content-item.content-item-active{
+    display: inline-block;
+}
