@@ -19,13 +19,6 @@ The Airpods Webpage is a static site designed to showcase AirPods with an intera
   - **Product Details**: Text and other visual elements on the page adjust to highlight the features and style of the selected color.
   - **Hero Section**: The background or other design elements may also update to align with the selected color, enhancing the visual consistency.
 
-### Product Information Sections
-
-- **Product Details**: Detailed descriptions and high-quality images of the AirPods and their features are provided.
-- **Composition**: Information about the materials and design features of the AirPods.
-- **Battery Case**: Details about the Smart Case, including its benefits and how it preserves battery life.
-- **Audio Features**: An explanation of the advanced audio technologies and user experience enhancements.
-
 ## Usage
 
 1. **Navigate**: Use the menu to access different sections of the site.
@@ -36,15 +29,13 @@ The Airpods Webpage is a static site designed to showcase AirPods with an intera
 
 - **`index.html`**: Contains the structure and content of the webpage.
 - **`css/style.css`**: Provides the styling for the webpage, including layout and design elements.
+- **`scss/`**: Contains SCSS partials for styling, which are compiled into the CSS file.
 - **`js/script.js`**: Manages the dynamic interactions on the webpage, including menu toggling and color selection.
 - **`imgs/`**: Folder containing images used throughout the site, including product photos and icons.
+- **`AirPods.m.fig`**: Figma design file containing the visual layout and design elements for the AirPods webpage.
 
 ## Credits
 
 - **Fonts**: Uses Google Fonts (Inter) for typography.
 - **Icons**: Custom icons for the menu and close buttons.
 - **Images**: Various product images and design elements.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
