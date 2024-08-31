@@ -137,7 +137,7 @@
 .audio::after{
     content: "";
     position: absolute;
-    background-image: url(../../imgs/rings.png);
+    background-image: url(../imgs/rings.png);
     bottom: -250px;
     width: 100%;
     height: 150vh;
@@ -150,7 +150,7 @@
 
 .audio::before{
     content: "";
-    background-image: url(../../imgs/spatial_figure.jpg);
+    background-image: url(../imgs/spatial_figure.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
