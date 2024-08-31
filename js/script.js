@@ -2,12 +2,22 @@ const menuIcon = document.querySelector(".menu-icon");
 const menuClose = document.querySelector(".close-icon");
 const menuList = document.querySelector(".menu-list");
 
+const airpodsTitle = document.querySelector(".title");
 
-// menuIcon.addEventListener("click", () => {
-//     if (menuIcon){
-//         menuList.style.display = "flex";
-//     }
-// })
+
+menuIcon.addEventListener("click", () => {
+    airpodsTitle.style.visibility = "hidden";
+    menuList.style.display = "flex";
+    menuIcon.style.display = "none";
+    menuClose.style.display = "block";
+});
+
+menuClose.addEventListener("click", () => {
+    menuList.style.display = "none";
+    airpodsTitle.style.visibility = "visible";
+    menuIcon.style.display = "block";
+    menuClose.style.display = "none";
+});
 
 
 // choose color of airpods

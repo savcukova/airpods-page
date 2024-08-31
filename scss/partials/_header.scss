@@ -142,7 +142,6 @@ header {
     .title{
         position: relative;
         font-size: 70px;
-        padding-top: 0;
     }
 
     header{
@@ -153,17 +152,24 @@ header {
         }
 
         .nav-section{
+            .menu {
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                right: 50%;
+            }
+
             .menu-list {
                 display: none;
                 flex-direction: column;
-                width: 100%;
-                z-index: 9;
+                gap: 80px;
             }
         }
     }
 
     .menu-icon {
         display: block;
+        z-index: 99;
     }
 }
 
